@@ -119,7 +119,7 @@ public class PulseLayer: CAShapeLayer {
             animationGroup.duration += max(pulse.repeatDelay, 0.0)
         }
         animationGroup.animations = animations
-        animationGroup.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        animationGroup.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         animationGroup.repeatCount = min(Float(pulse.repeatCount), Float.greatestFiniteMagnitude)
         return animationGroup
     }
